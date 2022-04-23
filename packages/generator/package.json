@@ -1,0 +1,7 @@
+{
+  "name": "@opticoven/generator",
+  "version": "0.0.0",
+  "description": "Generates the OptiCoven",
+  "main": "index.ts",
+  "license": "MIT"
+}

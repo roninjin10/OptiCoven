@@ -6,5 +6,6 @@
   "repository": "git@github.com:tmwBuidls/awesome-nft-contracts.git",
   "author": "roninjin10",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": ["packages/*"]
 }
