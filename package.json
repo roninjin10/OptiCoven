@@ -1,0 +1,10 @@
+{
+  "name": "opticoven",
+  "version": "0.0.0",
+  "description": "Free L2 WITCH airdrop",
+  "main": "OptiCoven/index.tsx",
+  "repository": "git@github.com:tmwBuidls/awesome-nft-contracts.git",
+  "author": "roninjin10",
+  "license": "MIT",
+  "private": true
+}
