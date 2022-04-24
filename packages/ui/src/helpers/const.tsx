@@ -8,11 +8,11 @@ export const LOGO_WIDTH = "42px"
 
 export const APP_TITLE = "opticoven"
 export const APP_DESCRIPTION =
-  "Do your part to support Optimistic Rollups for Ethereum's better scaling tomorrow! Upload your photo, choose your mask, and download or share with the Twitter button!"
+  "Show your support for cheaper gas fees and scalable Ethereum! Connect your wallet and select a witch from your coven!  Mint on Optimism for under a dollar!"
 
 export const APP_LINKS = [
   { href: "https://www.cryptocoven.xyz/", title: "Crypto Coven", icon: <IconInfo /> },
-  { href: "https://app.optimism.io/", title: "Bridge ETH to Optimism", icon: <IconInfo /> },
+  { href: "https://app.optimism.io/", title: "Bridge ETH To Optimism", icon: <IconInfo /> },
 ]
 
 export const TWITTER_SHARING_URL =

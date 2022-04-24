@@ -53,7 +53,7 @@ const Info: React.FC<{}> = ({}) => {
       <Row middle="xs" center="xs">
         <Col xs={12}>
           <h1 style={{color: theme.colors.primary}}>{APP_TITLE}</h1>
-          {false && <p>{APP_DESCRIPTION}</p>}
+          {<p style={{color: theme.colors.primary}}>{APP_DESCRIPTION}</p>}
           <S.Links>
             {APP_LINKS.map((item, i) => (
               <a href={item.href} target="_blank" rel="noreferrer" key={i}>

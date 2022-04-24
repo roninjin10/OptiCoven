@@ -47,7 +47,7 @@ const theme = {
       gray: "#777B84",
       black: "#0F0F0F",
       white: "#ffffff",
-      odd: "#f7f7f7",
+      odd: "black",
     },
     transition: {
       base: "0.3s ease",

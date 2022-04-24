@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <S.Wrapper>
       <Grid>
-        <S.Logo href="/">
+        <S.Logo href="https://www.optimism.io/" target="_blank">
           <span>{LOGO_NAME}</span>
           <img
             style={{ paddingTop: "4px", width: "30px", height: "30px", paddingRight: "4px" }}
