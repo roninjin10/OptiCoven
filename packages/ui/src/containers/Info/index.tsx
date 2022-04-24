@@ -33,9 +33,8 @@ const Info: React.FC<Props> = ({ onDrop }: Props) => {
           <S.Divider />
           <S.UploadWrapper>
             <div>
-              <Button $color={ButtonColor.White} $size={ButtonSize.Lg} {...getRootProps()}>
-                Pick Photo
-                <input {...getInputProps()} name="file" accept="image/*" />
+              <Button $color={ButtonColor.White} $size={ButtonSize.Lg} >
+                CONNECT WALLET
               </Button>
               <S.Hint>or drag and drop your file here</S.Hint>
             </div>

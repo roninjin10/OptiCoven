@@ -6,6 +6,7 @@ import { Row } from "react-styled-flexboxgrid"
 import Button from "../../components/Button"
 
 export const Wrapper = styled.div`
+  color: rgb(182, 182, 182);
   height: 100%;
   width: 100%;
   text-align: center;
@@ -53,10 +54,10 @@ export const Links = styled.div`
     }
 
     &:hover {
-      color: #de0000;
+      color: rgb(224, 175, 132);
 
       svg path {
-        fill: #de0000;
+        fill: rgb(224, 175, 132);
       }
     }
   }

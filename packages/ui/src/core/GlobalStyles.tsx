@@ -28,6 +28,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background-color: #E2E5E9;
     position: relative;
     min-height: 100vh;
     font-weight: normal;

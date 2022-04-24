@@ -7,6 +7,7 @@ import { rem } from "polished"
 export interface CardProps {}
 
 const Card = styled.div<CardProps>`
+  background-color: rgba(0, 0, 0, 0.8);
   padding: ${rem(54)} ${rem(40)};
   padding: 3vw 2vw;
   position: relative;

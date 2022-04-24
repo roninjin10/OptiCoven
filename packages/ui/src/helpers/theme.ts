@@ -39,7 +39,7 @@ const theme = {
       black: 900,
     },
     colors: {
-      primary: "#ff0000",
+      primary: "rgb(224, 175, 132)",
       secondary: "#0F0F0F",
       tertiary: "#3F5FBF",
       dark: "#252628",
