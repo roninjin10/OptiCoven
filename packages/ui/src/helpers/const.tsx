@@ -2,11 +2,11 @@ import { IconInfo, IconYoutube, IconTelegram, IconInstagram, IconGithub, IconTwi
 
 // === ADD CONFIG ===
 export const LOGO = "/static/images/logo.svg"
-export const LOGO_NAME = "Optimism Mask"
+export const LOGO_NAME = "opticoven"
 export const LOGO_WIDTH = "42px"
 // to change app colors go to theme.ts
 
-export const APP_TITLE = "Optimism Mask"
+export const APP_TITLE = "opticoven"
 export const APP_DESCRIPTION =
   "Do your part to support Optimistic Rollups for Ethereum's better scaling tomorrow! Upload your photo, choose your mask, and download or share with the Twitter button!"
 
