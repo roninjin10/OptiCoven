@@ -1,7 +1,0 @@
-{
-  "name": "@opticoven/scraper",
-  "version": "0.0.0",
-  "description": "Scraper for getting crypto coven data",
-  "main": "index.ts",
-  "license": "MIT"
-}
