@@ -53,8 +53,6 @@ const Sandbox: React.FC<Props> = ({ file }: Props) => {
   const [scale, setScale] = useState<Vector2d>({ x: CONTROLLER_SIZE, y: CONTROLLER_SIZE })
   const [cursor, setCursor] = useState<Cursor>(Cursor.Default)
 
-  console.log({stageRef, coordinates, edit, rotation, scale, cursor})
-
   const onEdit = () => {
     setEdit(not(edit))
   }
