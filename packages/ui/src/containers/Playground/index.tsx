@@ -12,10 +12,6 @@ import * as S from "./styled"
 const Playground: React.FC = () => {
   const [file, setFile] = useState<string | undefined>()
 
-  const onDrop = ([file]: File[]) => {
-    setFile(URL.createObjectURL(file))
-  }
-
   return (
     <Section>
       <Grid>
@@ -24,7 +20,7 @@ const Playground: React.FC = () => {
             <Sandbox file={file} />
           </Card>
           <Card>
-            <Info onDrop={onDrop} />
+            <Info />
           </Card>
         </S.Wrapper>
       </Grid>
