@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+// @ts-ignore
 import { Grid } from "react-styled-flexboxgrid"
 
 import Info from "../Info"

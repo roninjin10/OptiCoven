@@ -1,4 +1,5 @@
 import React from "react"
+// @ts-ignore
 import { Grid, Row, Col } from "react-styled-flexboxgrid"
 
 import { DISCLAIMER } from "../../helpers/const"

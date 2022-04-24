@@ -66,5 +66,3 @@ export const MASK_WIDTH = 208
 export const MASK_HEIGHT = 55
 
 export const ONE_RADIAN_IN_DEGREES = 180 / Math.PI
-
-export const RENDER_TIME = 250

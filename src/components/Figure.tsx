@@ -1,10 +1,13 @@
 import React from "react"
+// @ts-ignore
 import useImage from "use-image"
 import { head } from "ramda"
 import { Image } from "react-konva"
+// @ts-ignore
 import { Vector2d } from "konva/types/types"
 
 import { scaleFigure } from "../helpers/utils"
+// @ts-ignore
 import { KonvaEventObject } from "konva/types/Node"
 
 /**

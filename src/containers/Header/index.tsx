@@ -1,4 +1,5 @@
 import React from "react"
+// @ts-ignore
 import { Grid } from "react-styled-flexboxgrid"
 
 import { LOGO_NAME, LOGO, LOGO_WIDTH } from "../../helpers/const"
