@@ -1,7 +1,5 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useRef, useState } from "react"
 import { Stage, Layer } from "react-konva"
-import { Vector2d } from "konva/types/types"
-import { KonvaEventObject } from "konva/types/Node"
 import { not } from "ramda"
 
 import {
@@ -9,7 +7,6 @@ import {
   CONTROLLER_SIZE,
   MASK_HEIGHT,
   MASK_WIDTH,
-  RENDER_TIME,
   SCALE_FACTOR,
   STAGE_HEIGHT,
   STAGE_WIDTH,
@@ -19,7 +16,7 @@ import {
   MASK,
 } from "../../helpers/const"
 
-import { download, detectFace, loadModels } from "../../helpers/utils"
+import { download } from "../../helpers/utils"
 
 import Controller from "../Controller"
 import { IconEdit, IconSave, IconShare } from "../../icons"
@@ -27,6 +24,8 @@ import Figure from "../../components/Figure"
 import Button, { ButtonColor, ButtonSize } from "../../components/Button"
 
 import * as S from "./styled"
+import { KonvaEventObject } from "konva/lib/Node"
+import { Vector2d } from "konva/lib/types"
 
 interface Props {
   file?: string
@@ -54,14 +53,6 @@ const Sandbox: React.FC<Props> = ({ file }: Props) => {
   const [scale, setScale] = useState<Vector2d>({ x: CONTROLLER_SIZE, y: CONTROLLER_SIZE })
   const [cursor, setCursor] = useState<Cursor>(Cursor.Default)
 
-  const onDetect = async () => {
-    try {
-      const data = await detectFace(stageRef?.current?.content)
-      setRotation(data.rotation)
-      setCoordinates(data.coordinates)
-    } catch (error) {}
-  }
-
   const onEdit = () => {
     setEdit(not(edit))
   }
@@ -85,17 +76,6 @@ const Sandbox: React.FC<Props> = ({ file }: Props) => {
       y: target.y(),
     })
   }
-
-  useEffect(() => {
-    loadModels()
-  }, [])
-
-  useEffect(() => {
-    if (file) {
-      /** @todo refactor this */
-      setTimeout(onDetect, RENDER_TIME)
-    }
-  }, [file])
 
   return (
     <S.Wrapper preview={file} cursor={cursor}>

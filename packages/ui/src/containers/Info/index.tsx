@@ -1,5 +1,6 @@
 import React from "react"
 import { useDropzone } from "react-dropzone"
+// @ts-ignore
 import { Row, Col } from "react-styled-flexboxgrid"
 
 import { APP_TITLE, APP_DESCRIPTION, APP_LINKS } from "../../helpers/const"

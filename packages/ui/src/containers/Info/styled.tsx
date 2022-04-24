@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { rem } from "polished"
+// @ts-ignore
 import { Row } from "react-styled-flexboxgrid"
 
 import Button from "../../components/Button"
