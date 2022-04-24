@@ -4,8 +4,15 @@ import { rem } from "polished"
 import { Row } from "react-styled-flexboxgrid"
 
 import Button from "../../components/Button"
+import theme from "../../helpers/theme"
 
 export const Wrapper = styled.div`
+  .MuiFormControl-root {
+    border-top-color: ${theme.colors.primary} !important;
+    border-bottom-color: ${theme.colors.primary} !important;
+    border-right-color: ${theme.colors.primary} !important;
+    border-left-color: ${theme.colors.primary} !important;
+  }
   color: rgb(182, 182, 182);
   height: 100%;
   width: 100%;

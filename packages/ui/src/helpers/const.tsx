@@ -11,8 +11,8 @@ export const APP_DESCRIPTION =
   "Do your part to support Optimistic Rollups for Ethereum's better scaling tomorrow! Upload your photo, choose your mask, and download or share with the Twitter button!"
 
 export const APP_LINKS = [
-  { href: "https://app.optimism.io/", title: "Optimistic bridge", icon: <IconInfo /> },
-  { href: "https://youtu.be/97DU_YgNPgE", title: "Video explainer", icon: <IconYoutube /> },
+  { href: "https://www.cryptocoven.xyz/", title: "Crypto Coven", icon: <IconInfo /> },
+  { href: "https://app.optimism.io/", title: "Bridge ETH to Optimism", icon: <IconInfo /> },
 ]
 
 export const TWITTER_SHARING_URL =

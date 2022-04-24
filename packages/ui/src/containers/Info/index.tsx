@@ -9,6 +9,8 @@ import Button, { ButtonColor, ButtonSize } from "../../components/Button"
 import * as S from "./styled"
 import { Optimism, useEthers } from "@usedapp/core"
 import { SUPPORTED_WALLETS } from "../../web3/connectors"
+import { Box, InputLabel, MenuItem, FormControl, Select, SelectChangeEvent, styled } from "@mui/material"
+import theme from "../../helpers/theme"
 
 const Info: React.FC<{}> = ({}) => {
   const [witch, setWitch] = React.useState("")
@@ -50,7 +52,7 @@ const Info: React.FC<{}> = ({}) => {
     <S.Wrapper>
       <Row middle="xs" center="xs">
         <Col xs={12}>
-          <h1>{APP_TITLE}</h1>
+          <h1 style={{color: theme.colors.primary}}>{APP_TITLE}</h1>
           {false && <p>{APP_DESCRIPTION}</p>}
           <S.Links>
             {APP_LINKS.map((item, i) => (
@@ -86,14 +88,14 @@ const Info: React.FC<{}> = ({}) => {
               <span>SWITCH TO OPTIMISM</span>
             </Button>
           )}
-          {account && chainId !== Optimism.chainId && (
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          {account && chainId === Optimism.chainId && (
+            <FormControl fullWidth >
+              <InputLabel id="witch-select-label">Witch</InputLabel>
               <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
+                labelId="witch-select-label"
+                id="witch-select"
                 value={witch}
-                label="Age"
+                label="Witch"
                 onChange={handleChange}
               >
                 <MenuItem value={10}>Ten</MenuItem>

@@ -1,5 +1,6 @@
 import { createGlobalStyle, keyframes } from "styled-components"
 import { normalize, rem } from "polished"
+import theme from "../helpers/theme"
 
 export const GlobalStyles = createGlobalStyle`
   ${normalize()};
@@ -73,10 +74,29 @@ export const GlobalStyles = createGlobalStyle`
       margin-bottom: 6px;
     }
   }
-
+  .MuiPaper-root {
+    background-color: transparent !important;
+    color: ${theme.colors.primary} !important;
+  }
+  .Mui-focused {
+    border-color: ${theme.colors.primary} !important;
+    color: ${theme.colors.primary} !important;
+  }
+  .MuiOutlinedInput-input {
+    border-color: ${theme.colors.primary} !important;
+    color: ${theme.colors.primary} !important;
+  }
+  .MuiInputLabel-root {
+    color: ${theme.colors.primary} !important;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: ${theme.colors.primary} !important;
+    color: ${theme.colors.primary} !important;
+  }
   * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: ${theme.colors.primary} !important;
   }
 `
 
